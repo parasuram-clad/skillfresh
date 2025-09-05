@@ -962,3 +962,9 @@ small.text-muted {
 .bg-tertiary-light-2 {
   background-color: #f8eafc;
 }
+.bg-icon-benefit {
+  box-shadow: 0 5px 20px #d2d2d2;
+}
+.bg-icon-benefit-color {
+  color: #09427ca8;
+}
