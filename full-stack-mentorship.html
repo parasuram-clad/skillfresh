@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Full Stack Developer Mentorship Program - SkillFresh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<!-- <style>
+    .curriculum-list-card {
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        /* full box border */
+        border-radius: 12px;
+        /* rounded corners */
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        /* subtle shadow */
+        transition: all 0.3s ease;
+    }
+
+    .curriculum-list-card:hover {
+        transform: translateY(-3px);
+        /* small lift effect */
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        border-color: var(--primary);
+        /* highlight border on hover */
+    }
+
+    .curriculum-list-card.active {
+        border: 2px solid var(--primary);
+        background: #f9fff0;
+        /* light tint of primary */
+        box-shadow: 0 6px 20px rgba(188, 223, 71, 0.3);
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .curriculum-section {
+        height: 80%;
+        /* Full viewport height */
+        display: flex;
+        align-items: self-start;
+        /* Center content vertically */
+    }
+
+    #curriculum-detail {
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+        /* subtle border */
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        /* ensures image spans edge-to-edge */
+        padding: 0;
+        /* remove inner padding */
+    }
+
+    #curriculum-detail img {
+        width: 100%;
+        height: 300px;
+        /* fixed height for consistency */
+        object-fit: cover;
+        /* crop nicely to fill area */
+        display: block;
+        border-bottom: 1px solid #e0e0e0;
+        /* clean separation line */
+        border-radius: 12px 12px 0 0;
+        /* rounded top corners */
+    }
+
+    #curriculum-detail .detail-body {
+        padding: 20px;
+        /* move content padding here */
+        flex: 1;
+    }
+
+    .curriculum-list-card {
+        min-height: 100px;
+        /* Consistent card height */
+    }
+
+
+
+    .curriculum-card {
+        border-radius: 16px;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .curriculum-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .curriculum-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .bg-tertiary {
+        background: var(--tertiary) !important;
+    }
+
+    .scroll-section {
+        overflow: scroll;
+        gap: 20px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+</style> -->
+
+<style>
+    /* Background with fixed effect */
+    .how-it-works-section {
+        background: url("img/Mentorship-Program/fsd/bg-image.png") no-repeat center center/cover;
+        background-attachment: fixed;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .how-it-works-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(227, 227, 227, 0.902);
+        /* dark overlay */
+        z-index: -1;
+    }
+
+    /* Step circles */
+    .step-icon {
+        width: 120px;
+        height: 120px;
+        border: 5px solid #ffffff33;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Gradient Colors */
+    .gradient-blue {
+        background: var(--primary);
+    }
+
+    .gradient-green {
+        background: var(--secondary);
+    }
+
+    .gradient-orange {
+        background: var(--tertiary);
+    }
+
+    .gradient-purple {}
+
+    .gradient-red {
+        background: var(--bs-dark);
+    }
+
+    /* Arrows */
+    .arrow-icon {
+        color: #fff;
+        opacity: 0.7;
+    }
+</style>
+
+<style>
+    .step-card {
+        background: #fff;
+
+        overflow: hidden;
+
+    }
+
+
+
+
+
+    .step-footer {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeInDown" data-wow-delay="0.2s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0"><img src="img/skill-fresh.svg" alt="SkillFresh"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4 border-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="campus-ready.html" class="nav-item nav-link">Campus Ready</a>
+                <a href="mentorship.html" class="nav-item nav-link active">Mentorship Program</a>
+            </div>
+            <a href="https://wa.link/50r2d2" target="_blank"
+                class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us <i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid bg-light  text-white text-center py-5 mb-5 wow fadeInDown" data-wow-delay="0.1s">
+        <h1 class="display-4 fw-bold">Full Stack Developer </h1>
+        <p class="lead text-muted">Master both Frontend and Backend with real-world projects</p>
+    </div>
+
+    <!-- Program Overview -->
+    <div class="container py-5">
+        <div class="row align-items-center g-5 flex-md-column-reverse flex-lg-row">
+            <!-- Left Content -->
+            <div class="col-lg-7 col-md-12 wow fadeInLeft" data-wow-delay="0.1s">
+                <h2 class="fw-bold mb-3">Full Stack Developer Mentorship Program</h2>
+                <p>
+                    Our 16-week mentorship program is designed for aspiring full stack developers who want
+                    to build scalable applications. With hands-on projects and direct mentorship from industry
+                    experts, you’ll gain skills that employers value the most.
+                </p>
+
+                <!-- Language & Certificate -->
+                <p class="text-muted small mb-3">
+                    <i class="fa fa-language me-1 text-primary"></i>
+                    Languages: English & Tamil &nbsp;&nbsp; | &nbsp;&nbsp;
+                    <i class="fa fa-certificate me-1 text-primary"></i> Certificate: Included
+                </p>
+
+                <!-- Program Highlights -->
+                <div class="p-4 rounded-4 bg-light">
+                    <div class="row g-4 mb-4">
+                        <!-- Box 1 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-white rounded-4 text-center p-4 h-100">
+                                <i class="fa fa-clock text-primary mb-2 fa-2x"></i>
+                                <p class="mb-0 fw-bold">16 Weeks</p>
+                                <small class="text-muted ">Program Duration</small>
+
+                            </div>
+                        </div>
+
+                        <!-- Box 2 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-white rounded-4 text-center p-4 h-100">
+                                <i class="fa fa-tasks text-secondary mb-2 fa-2x"></i>
+                                <p class="mb-0 fw-bold">10+ Projects</p>
+                                <small class="text-muted">Hands-on Work</small>
+                            </div>
+                        </div>
+
+                        <!-- Box 3 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-white rounded-4 text-center p-4 h-100">
+                                <i class="fa fa-signal text-warning mb-2 fa-2x"></i>
+                                <p class="mb-0 fw-bold">Beginner–Advanced</p>
+                                <small class="text-muted">Level</small>
+                            </div>
+                        </div>
+
+                        <!-- Box 4 -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="bg-white rounded-4 text-center p-4 h-100">
+                                <i class="fa fa-certificate text-danger mb-2 fa-2x"></i>
+                                <p class="mb-0 fw-bold">Certificate</p>
+                                <small class="text-muted">Included</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What You'll Learn -->
+                    <h5 class="fw-bold mb-3">
+                        <i class="fa fa-lightbulb text-primary me-2"></i> What You’ll Learn
+                    </h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i> Build responsive websites using
+                            HTML, CSS, JavaScript</li>
+                        <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i> Develop dynamic apps with
+                            React.js</li>
+                        <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i> Master backend development
+                            using Node.js & Express</li>
+                        <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i> Work with databases (MongoDB &
+                            SQL)</li>
+                        <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i> Deploy and manage apps on cloud
+                            platforms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0 wow fadeInRight" data-wow-delay="0.3s">
+                <img src="img/Mentorship-Program/fsw.jpg" class="img-fluid rounded-4"
+                    alt="Full Stack Developer Program">
+            </div>
+        </div>
+    </div>
+    <!-- Free Consultation Section -->
+    <section class="consultation-section py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center text-md-start">
+                <!-- Icon -->
+                <div class="col-md-3 mb-3 mb-md-0 text-center">
+                    <div class="animation" style="background:transparent">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 162" width="142" height="162"
+                            preserveAspectRatio="xMidYMid meet"
+                            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                            <defs>
+                                <clipPath id="__lottie_element_10">
+                                    <rect width="142" height="162" x="0" y="0"></rect>
+                                </clipPath>
+                                <filter id="__lottie_element_26" filterUnits="objectBoundingBox" x="0%" y="0%"
+                                    width="100%" height="100%">
+                                    <feGaussianBlur in="SourceAlpha" result="drop_shadow_1" stdDeviation="6.5">
+                                    </feGaussianBlur>
+                                    <feOffset dx="0" dy="0" in="drop_shadow_1" result="drop_shadow_2"></feOffset>
+                                    <feFlood flood-color="#cecaf5" flood-opacity="1" result="drop_shadow_3"></feFlood>
+                                    <feComposite in="drop_shadow_3" in2="drop_shadow_2" operator="in"
+                                        result="drop_shadow_4"></feComposite>
+                                    <feMerge>
+                                        <feMergeNode></feMergeNode>
+                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <g clip-path="url(#__lottie_element_10)">
+                                <g transform="matrix(1,0,0,1,71.5,83.46914672851562)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path fill="rgb(255,33,22)" fill-opacity="1"
+                                            d=" M-54.5,-53.15599822998047 C-54.5,-60.78499984741211 -48.290000915527344,-67 -40.65999984741211,-67 C-40.65999984741211,-67 20.298999786376953,-67 20.298999786376953,-67 C20.298999786376953,-67 20.253000259399414,-66.99600219726562 20.253000259399414,-66.99600219726562 C20.253000259399414,-66.99600219726562 23.35099983215332,-67.13200378417969 26.35700035095215,-65.84200286865234 C28.90999984741211,-64.74700164794922 30.631999969482422,-63.106998443603516 30.631999969482422,-63.106998443603516 C30.64299964904785,-63.09600067138672 30.655000686645508,-63.08399963378906 30.666000366210938,-63.073001861572266 C30.666000366210938,-63.073001861572266 50.83700180053711,-43.290000915527344 50.83700180053711,-43.290000915527344 C50.840999603271484,-43.284000396728516 50.84600067138672,-43.27899932861328 50.849998474121094,-43.27299880981445 C50.849998474121094,-43.27299880981445 52.547000885009766,-41.64799880981445 53.5890007019043,-39.3129997253418 C54.70000076293945,-36.821998596191406 54.483001708984375,-34.262001037597656 54.483001708984375,-34.262001037597656 C54.483001708984375,-34.262001037597656 54.483001708984375,53.15700149536133 54.483001708984375,53.15700149536133 C54.483001708984375,60.7859992980957 48.27199935913086,67 40.641998291015625,67 C40.641998291015625,67 -40.65999984741211,67 -40.65999984741211,67 C-48.290000915527344,67 -54.5,60.7859992980957 -54.5,53.15700149536133 C-54.5,53.15700149536133 -54.5,-53.15599822998047 -54.5,-53.15599822998047z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,0,0,1,71.5,83.46914672851562)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path fill="rgb(245,245,245)" fill-opacity="1"
+                                            d=" M20.5310001373291,-63 C20.5310001373291,-63 -41.104000091552734,-63 -41.104000091552734,-63 C-46.35100173950195,-63 -50.5,-58.856998443603516 -50.5,-53.62200164794922 C-50.5,-53.62200164794922 -50.5,53.62200164794922 -50.5,53.62200164794922 C-50.5,58.856998443603516 -46.35100173950195,63 -41.104000091552734,63 C-41.104000091552734,63 41.099998474121094,63 41.099998474121094,63 C46.34700012207031,63 50.49599838256836,58.85599899291992 50.49599838256836,53.62200164794922 C50.49599838256836,53.62200164794922 50.49599838256836,-34.65999984741211 50.49599838256836,-34.65999984741211 C50.49700164794922,-34.69200134277344 50.49800109863281,-34.724998474121094 50.5,-34.75699996948242 C50.5,-34.75699996948242 50.47100067138672,-36.71900177001953 49.99100112915039,-37.79100036621094 C49.39699935913086,-39.119998931884766 48.17100143432617,-40.4109992980957 48.17100143432617,-40.4109992980957 C48.17100143432617,-40.4109992980957 27.82699966430664,-60.32099914550781 27.82699966430664,-60.32099914550781 C27.82699966430664,-60.32099914550781 27.81800079345703,-60.33000183105469 27.81800079345703,-60.33000183105469 C27.809999465942383,-60.3380012512207 26.579999923706055,-61.46099853515625 24.844999313354492,-62.20399856567383 C23.04199981689453,-62.97600173950195 20.577999114990234,-63 20.577999114990234,-63 C20.562000274658203,-63 20.547000885009766,-63 20.5310001373291,-63z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,0,0,1,71.5,69.96914672851562)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path fill="rgb(255,33,22)" fill-opacity="1"
+                                            d=" M-1.3660000562667847,-24.952999114990234 C-0.6480000019073486,-23.83300018310547 -0.7609999775886536,-21.611000061035156 -1.0269999504089355,-19.38599967956543 C-1.3830000162124634,-17.148000717163086 -2.006999969482422,-14.190999984741211 -2.4140000343322754,-12.8149995803833 C-2.4140000343322754,-12.8149995803833 -3.1549999713897705,-10.314000129699707 -3.1549999713897705,-10.314000129699707 C-3.1549999713897705,-10.314000129699707 -4.205999851226807,-13.635000228881836 -4.205999851226807,-13.635000228881836 C-4.783999919891357,-15.461999893188477 -5.2170000076293945,-18.424999237060547 -5.354000091552734,-20.159000396728516 C-5.761000156402588,-25.312999725341797 -3.3580000400543213,-27.121000289916992 -1.3660000562667847,-24.952999114990234z M0.9509999752044678,-0.8080000281333923 C2.0769999027252197,0.8870000243186951 3.8519999980926514,3.1670000553131104 4.895999908447266,4.260000228881836 C4.895999908447266,4.260000228881836 6.565999984741211,6.297999858856201 6.565999984741211,6.297999858856201 C6.565999984741211,6.297999858856201 1.9210000038146973,7.206999778747559 -0.367000013589859,7.802000045776367 C-2.5269999504089355,8.36400032043457 -6.7729997634887695,9.75 -6.7729997634887695,9.75 C-6.7729997634887695,9.75 -5.974999904632568,8.211999893188477 -5.974999904632568,8.211999893188477 C-5.974999904632568,8.211999893188477 -3.2200000286102295,1.4329999685287476 -3.2200000286102295,1.4329999685287476 C-2.3369998931884766,-0.640999972820282 -1.2599999904632568,-4.086999893188477 -1.2599999904632568,-4.086999893188477 C-1.2599999904632568,-4.086999893188477 -0.5220000147819519,-2.7300000190734863 0.9509999752044678,-0.8080000281333923z M22.799999237060547,7.260000228881836 C24.750999450683594,8.237000465393066 25.000999450683594,10.661999702453613 23.275999069213867,11.864999771118164 C22.30500030517578,12.555999755859375 21.02400016784668,12.628000259399414 18.809999465942383,11.95300006866455 C16.565000534057617,11.269000053405762 13.489999771118164,9.932999610900879 12.225000381469727,9.21399974822998 C11.274999618530273,8.67300033569336 9.133999824523926,7.199999809265137 9.133999824523926,7.199999809265137 C9.793999671936035,7.052000045776367 13.692000389099121,6.565000057220459 16.114999771118164,6.401000022888184 C20.05900001525879,6.3429999351501465 21.281999588012695,6.499000072479248 22.799999237060547,7.260000228881836z M-14.628999710083008,15.446999549865723 C-17.10099983215332,19.349000930786133 -20.67099952697754,23.55299949645996 -22.434999465942383,24.63800048828125 C-24.70199966430664,26.033000946044922 -25.82699966430664,26.125999450683594 -26.767000198364258,24.99799919128418 C-28.44099998474121,22.989999771118164 -25.22100067138672,19.670000076293945 -18.18400001525879,16.148000717163086 C-18.18400001525879,16.148000717163086 -13.628000259399414,13.866999626159668 -13.628000259399414,13.866999626159668 C-13.628000259399414,13.866999626159668 -14.628999710083008,15.446999549865723 -14.628999710083008,15.446999549865723z M-17.88800048828125,14.413999557495117 C-27.101999282836914,18.972999572753906 -30.496999740600586,23.264999389648438 -27.358999252319336,26.388999938964844 C-25.76799964904785,27.972999572753906 -22.608999252319336,27.85300064086914 -19.594999313354492,26.094999313354492 C-16.902999877929688,24.52400016784668 -13.133000373840332,20.208999633789062 -9.904999732971191,15.001999855041504 C-9.036999702453613,13.60200023651123 -7.704999923706055,11.677000045776367 -7.704999923706055,11.677000045776367 C-3.9100000858306885,10.402000427246094 -2.617000102996826,9.965999603271484 -0.026000000536441803,9.270999908447266 C2.4839999675750732,8.597000122070312 7.581999778747559,7.565000057220459 7.581999778747559,7.565000057220459 C7.581999778747559,7.565000057220459 8.84000015258789,8.836999893188477 10.670999526977539,10.116999626159668 C18.80900001525879,15.807000160217285 28.5,15.399999618530273 28.5,10.468999862670898 C28.5,6.561999797821045 24.273000717163086,3.8369998931884766 11.930999755859375,5.440000057220459 C11.930999755859375,5.440000057220459 8.045999526977539,5.945000171661377 8.045999526977539,5.945000171661377 C8.045999526977539,5.945000171661377 4.923999786376953,2.0789999961853027 4.923999786376953,2.0789999961853027 C3.263000011444092,0.0010000000474974513 1.3739999532699585,-2.5920000076293945 0.7279999852180481,-3.684000015258789 C0.7279999852180481,-3.684000015258789 -0.44699999690055847,-5.670000076293945 -0.44699999690055847,-5.670000076293945 C-0.44699999690055847,-5.670000076293945 0.8870000243186951,-10.777000427246094 0.8870000243186951,-10.777000427246094 C2.5139999389648438,-17.006000518798828 2.6549999713897705,-21.945999145507812 1.281999945640564,-24.67300033569336 C-0.47600001096725464,-28.165000915527344 -4.915999889373779,-28.5 -6.271999835968018,-25.242000579833984 C-7.2729997634887695,-22.836999893188477 -6.710000038146973,-16.148000717163086 -5.132999897003174,-11.696999549865723 C-5.132999897003174,-11.696999549865723 -3.8499999046325684,-8.07699966430664 -3.8499999046325684,-8.07699966430664 C-3.8499999046325684,-8.07699966430664 -5.710999965667725,-3.184999942779541 -5.710999965667725,-3.184999942779541 C-6.735000133514404,-0.4950000047683716 -8.59000015258789,3.9200000762939453 -9.831999778747559,6.625999927520752 C-9.831999778747559,6.625999927520752 -12.09000015258789,11.545000076293945 -12.09000015258789,11.545000076293945 C-12.09000015258789,11.545000076293945 -17.88800048828125,14.413999557495117 -17.88800048828125,14.413999557495117z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,0,0,1,71.5,120.46914672851562)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path fill="rgb(44,44,44)" fill-opacity="1"
+                                            d=" M21.5,-10 C21.5,-10 10.345000267028809,-10 10.345000267028809,-10 C10.345000267028809,-10 10.345000267028809,10 10.345000267028809,10 C10.345000267028809,10 13.670999526977539,10 13.670999526977539,10 C13.670999526977539,10 13.670999526977539,1.281999945640564 13.670999526977539,1.281999945640564 C13.670999526977539,1.281999945640564 19.940000534057617,1.281999945640564 19.940000534057617,1.281999945640564 C19.940000534057617,1.281999945640564 19.940000534057617,-1.3700000047683716 19.940000534057617,-1.3700000047683716 C19.940000534057617,-1.3700000047683716 13.670999526977539,-1.3700000047683716 13.670999526977539,-1.3700000047683716 C13.670999526977539,-1.3700000047683716 13.670999526977539,-7.3480000495910645 13.670999526977539,-7.3480000495910645 C13.670999526977539,-7.3480000495910645 21.5,-7.3480000495910645 21.5,-7.3480000495910645 C21.5,-7.3480000495910645 21.5,-10 21.5,-10z M-3.2669999599456787,7.3480000495910645 C-3.2669999599456787,7.3480000495910645 -3.2669999599456787,-7.3480000495910645 -3.2669999599456787,-7.3480000495910645 C-3.2669999599456787,-7.3480000495910645 -1.8839999437332153,-7.3480000495910645 -1.8839999437332153,-7.3480000495910645 C1.7949999570846558,-7.3480000495910645 3.634999990463257,-4.896999835968018 3.634999990463257,0.007000000216066837 C3.634999990463257,2.2339999675750732 3.197999954223633,4.017000198364258 2.325000047683716,5.355000019073486 C1.4520000219345093,6.683000087738037 0.04899999871850014,7.3480000495910645 -1.8839999437332153,7.3480000495910645 C-1.8839999437332153,7.3480000495910645 -3.2669999599456787,7.3480000495910645 -3.2669999599456787,7.3480000495910645z M-2.075000047683716,-10 C-2.075000047683716,-10 -6.5929999351501465,-10 -6.5929999351501465,-10 C-6.5929999351501465,-10 -6.5929999351501465,10 -6.5929999351501465,10 C-6.5929999351501465,10 -1.8250000476837158,10 -1.8250000476837158,10 C0.47099998593330383,10 2.236999988555908,9.531000137329102 3.4730000495910645,8.593000411987305 C4.718999862670898,7.65500020980835 5.642000198364258,6.425000190734863 6.239999771118164,4.901000022888184 C6.8480000495910645,3.367000102996826 7.1519999504089355,1.6239999532699585 7.1519999504089355,-0.33000001311302185 C7.1519999504089355,-2.186000108718872 6.814000129699707,-3.875 6.13700008392334,-5.39900016784668 C5.46999979019165,-6.922999858856201 4.479000091552734,-8.071000099182129 3.1640000343322754,-8.843000411987305 C1.8589999675750732,-9.614999771118164 0.11299999803304672,-10 -2.075000047683716,-10z M-18.173999786376953,-0.4620000123977661 C-18.173999786376953,-0.4620000123977661 -18.173999786376953,-7.435999870300293 -18.173999786376953,-7.435999870300293 C-18.173999786376953,-7.435999870300293 -16.525999069213867,-7.435999870300293 -16.525999069213867,-7.435999870300293 C-15.5649995803833,-7.435999870300293 -14.86299991607666,-7.368000030517578 -14.42199993133545,-7.230999946594238 C-13.970999717712402,-7.104000091552734 -13.557999610900879,-6.751999855041504 -13.1850004196167,-6.176000118255615 C-12.812000274658203,-5.609000205993652 -12.62600040435791,-4.867000102996826 -12.62600040435791,-3.9489998817443848 C-12.62600040435791,-2.7179999351501465 -12.91100025177002,-1.8289999961853027 -13.479999542236328,-1.281999945640564 C-14.038999557495117,-0.7350000143051147 -15.053999900817871,-0.4620000123977661 -16.525999069213867,-0.4620000123977661 C-16.525999069213867,-0.4620000123977661 -18.173999786376953,-0.4620000123977661 -18.173999786376953,-0.4620000123977661z M-16.525999069213867,-10 C-16.525999069213867,-10 -21.5,-10 -21.5,-10 C-21.5,-10 -21.5,10 -21.5,10 C-21.5,10 -18.173999786376953,10 -18.173999786376953,10 C-18.173999786376953,10 -18.173999786376953,2.190000057220459 -18.173999786376953,2.190000057220459 C-18.173999786376953,2.190000057220459 -16.45199966430664,2.190000057220459 -16.45199966430664,2.190000057220459 C-14.529000282287598,2.190000057220459 -13.107000350952148,1.9800000190734863 -12.1850004196167,1.559999942779541 C-11.253000259399414,1.1399999856948853 -10.51200008392334,0.4560000002384186 -9.963000297546387,-0.4909999966621399 C-9.413999557495117,-1.437999963760376 -9.138999938964844,-2.571000099182129 -9.138999938964844,-3.890000104904175 C-9.138999938964844,-5.326000213623047 -9.47700023651123,-6.552000045776367 -10.154000282287598,-7.567999839782715 C-10.831000328063965,-8.593999862670898 -11.664999961853027,-9.253000259399414 -12.656000137329102,-9.545999526977539 C-13.647000312805176,-9.848999977111816 -14.937000274658203,-10 -16.525999069213867,-10z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g filter="url(#__lottie_element_26)"
+                                    transform="matrix(1,0,0,0.699999988079071,70.5,140.08319091796875)" opacity="0.99"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                        <path fill="rgb(206,202,245)" fill-opacity="1"
+                                            d=" M63.5,0 C63.5,0 63.5,0 63.5,0 C63.5,2.2076001167297363 61.70759963989258,4 59.5,4 C59.5,4 -59.5,4 -59.5,4 C-61.70759963989258,4 -63.5,2.2076001167297363 -63.5,0 C-63.5,0 -63.5,0 -63.5,0 C-63.5,-2.2076001167297363 -61.70759963989258,-4 -59.5,-4 C-59.5,-4 59.5,-4 59.5,-4 C61.70759963989258,-4 63.5,-2.2076001167297363 63.5,0z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>
+                </div>
+
+                <!-- Text -->
+                <div class="col-md-6">
+                    <h3 class="fw-bold">
+                        Claim Your <span class="highlight">Free 15-Min</span> Resume Consultation 🚀
+                    </h3>
+                    <p class="text-muted mb-3">
+                        Boost your chances of landing top developer roles with our expert guidance.
+                    </p>
+                </div>
+
+                <!-- Button -->
+                <div class="col-md-3 text-md-end text-center">
+                    <a href="#contact" class="btn btn-tertiary text-white px-4 py-2 fw-bold">
+                        Start Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Background Gradient (match your site’s colors instead of purple) */
+        .consultation-section {
+            background: #a8f231;
+            color: #fff;
+            /* border-radius: 12px; */
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+        }
+
+        /* Highlight text */
+        .consultation-section .highlight {
+            color: yellow;
+            /* keep the highlighted part bright like original */
+        }
+
+        /* PDF icon box */
+        .pdf-icon-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button */
+        .consultation-section .btn {
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .consultation-section .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+    <!-- Benefits Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2 class="fw-bold">Why Join This Program?</h2>
+            <p class="text-muted text-muted">
+                Build skills, projects, and confidence to launch your Full Stack career.
+            </p>
+
+
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4  wow fadeInUp" data-wow-delay="0.1s">
+                <div class="p-4  rounded-4 bg-primary-light-1   h-100">
+                    <div class="icon-box bg-dark text-light me-3 mb-2"><i class="fa fa-user-tie"></i></div>
+                    <h5>1-on-1 Mentorship</h5>
+                    <p class="text-muted">Get direct feedback and guidance from industry professionals.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="p-4 bg-primary-light-2   rounded-4  h-100">
+                    <div class="icon-box bg-dark text-light me-3 mb-2"><i class="fa fa-briefcase"></i></div>
+                    <h5>Hands-on Projects</h5>
+                    <p class="text-muted">Work on real-world assignments to build a strong portfolio.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="p-4 bg-secondary-light-1   rounded-4 h-100">
+                    <div class="icon-box bg-dark text-light me-3 mb-2"><i class="fa fa-graduation-cap"></i></div>
+
+                    <h5>Career Support</h5>
+                    <p class="text-muted">Get help with portfolio building, resume prep, and mock interviews.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="p-4 bg-secondary-light-2   rounded-4 h-100">
+                    <div class="icon-box bg-dark text-light me-3 mb-2"> <i class="fa fa-network-wired  "></i></div>
+
+                    <h5>Industry Networking</h5>
+                    <p class="text-muted">Connect with peers, mentors, and recruiters through our network.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="p-4 bg-tertiary-light-1   rounded-4  h-100">
+                    <div class="icon-box bg-dark text-light me-3 mb-2"> <i class="fa fa-laptop  "></i></div>
+
+
+                    <h5>Practical Tools & Resources</h5>
+                    <p class="text-muted">Access coding resources, templates, and tools to speed up learning.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="p-4 bg-tertiary-light-2   rounded-4  h-100">
+                    <div class="icon-box bg-dark text-light me-3 mb-2"><i class="fa fa-code"></i></div>
+                    <h5>Completion Certificate</h5>
+                    <p class="text-muted">Receive a recognized certificate to showcase your skills.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Curriculum Section -->
+    <div class="con-light-bg">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                <h2 class="fw-bold">Curriculum</h2>
+                <p class="text-muted">Step-by-step learning journey</p>
+            </div>
+
+            <div class="row g-4 curriculum-section">
+                <!-- Left Scrollable Content Panel -->
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Step 1 -->
+                        <div class="curriculum-list-card p-3 d-flex align-items-center justify-content-between active wow fadeInLeft"
+                            data-wow-delay="0.1s" data-target="0">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-primary text-white me-3"><i class="fa fa-code"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Frontend Foundations</h6>
+                                    <small class="text-muted">Weeks 1–3</small>
+                                </div>
+                            </div>
+                            <i class="fas fa-circle-arrow-right text-primary fa-lg"></i>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="curriculum-list-card p-3 d-flex align-items-center justify-content-between wow fadeInLeft"
+                            data-wow-delay="0.2s" data-target="1">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-secondary text-white me-3"><i class="fa fa-laptop-code"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Advanced React & APIs</h6>
+                                    <small class="text-muted">Weeks 4–6</small>
+                                </div>
+                            </div>
+                            <i class="fas fa-circle-arrow-right text-primary fa-lg"></i>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="curriculum-list-card p-3 d-flex align-items-center justify-content-between wow fadeInLeft"
+                            data-wow-delay="0.3s" data-target="2">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-tertiary text-white me-3"><i class="fa fa-server"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Backend Development</h6>
+                                    <small class="text-muted">Weeks 7–9</small>
+                                </div>
+                            </div>
+                            <i class="fas fa-circle-arrow-right text-primary fa-lg"></i>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="curriculum-list-card p-3 d-flex align-items-center justify-content-between wow fadeInLeft"
+                            data-wow-delay="0.4s" data-target="3">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-info text-white me-3"><i class="fa fa-robot"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">AI Integration</h6>
+                                    <small class="text-muted">Weeks 10–12</small>
+                                </div>
+                            </div>
+                            <i class="fas fa-circle-arrow-right text-primary fa-lg"></i>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="curriculum-list-card p-3 d-flex align-items-center justify-content-between wow fadeInLeft"
+                            data-wow-delay="0.5s" data-target="4">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-dark text-white me-3"><i class="fa fa-rocket"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Capstone Project</h6>
+                                    <small class="text-muted">Weeks 13–16</small>
+                                </div>
+                            </div>
+                            <i class="fas fa-circle-arrow-right text-primary fa-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Details Panel -->
+                <div class="col-lg-7 scroll-section align-items-center">
+
+                    <!-- Step 1 Detail -->
+                    <div class="curriculum-detail wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/Mentorship-Program/fsd/pic1.jpg" class="img-fluid" alt="Frontend Basics">
+                        <div class="detail-body">
+                            <div class="badge bg-light text-dark border">Weeks 1–3</div>
+                            <h3 class="fw-bold mb-3">Frontend Foundations</h3>
+                            <p class="mb-4">
+                                Learn HTML, CSS, and JavaScript. Build responsive websites and understand web
+                                fundamentals.
+                            </p>
+                            <button class="btn btn-tertiary text-white rounded-pill px-4 py-2">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 Detail -->
+                    <div class="curriculum-detail wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="img/Mentorship-Program/fsd/pic2.jpg" class="img-fluid" alt="React & APIs">
+                        <div class="detail-body">
+                            <div class="badge bg-light text-dark border">Weeks 4–6</div>
+                            <h3 class="fw-bold mb-3">Advanced React & APIs</h3>
+                            <p class="mb-4">
+                                Dive into React.js, Hooks, and API integration to build dynamic modern applications.
+                            </p>
+                            <button class="btn btn-tertiary text-white rounded-pill px-4 py-2">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 Detail -->
+                    <div class="curriculum-detail wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/Mentorship-Program/fsd/pic3.jpg" class="img-fluid" alt="Backend Development">
+                        <div class="detail-body">
+                            <div class="badge bg-light text-dark border">Weeks 7–9</div>
+                            <h3 class="fw-bold mb-3">Backend Development</h3>
+                            <p class="mb-4">
+                                Master Node.js, Express, and MongoDB. Build REST APIs and authentication systems.
+                            </p>
+                            <button class="btn btn-tertiary text-white rounded-pill px-4 py-2">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 Detail -->
+                    <div class="curriculum-detail wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="img/Mentorship-Program/fsd/pic4.jpg" class="img-fluid" alt="AI Integration">
+                        <div class="detail-body">
+                            <div class="badge bg-light text-dark border">Weeks 10–12</div>
+                            <h3 class="fw-bold mb-3">AI Integration</h3>
+                            <p class="mb-4">
+                                Learn AI/ML basics and integrate OpenAI or TensorFlow.js to create intelligent apps.
+                            </p>
+                            <button class="btn btn-tertiary text-white rounded-pill px-4 py-2">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 Detail -->
+                    <div class="curriculum-detail wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/Mentorship-Program/fsd/pic4.jpg" class="img-fluid" alt="Capstone Project">
+                        <div class="detail-body">
+                            <div class="badge bg-light text-dark border">Weeks 13–16</div>
+                            <h3 class="fw-bold mb-3">Capstone Project</h3>
+                            <p class="mb-4">
+                                Build a full-stack + AI powered app and deploy it to the cloud. Showcase your final
+                                project.
+                            </p>
+                            <button class="btn btn-tertiary text-white rounded-pill px-4 py-2">Enroll Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section py-5">
+        <div class="container">
+            <!-- Title -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="display-5 fw-bold">How It Works</h2>
+                    <p class="lead">
+                        A simple 3-step process to start your mentorship journey and build your future as a Full Stack
+                        Developer.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Steps as Cards -->
+            <div class="row g-3 justify-content-center">
+                <!-- Step 1 -->
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="step-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h2 class="circle-icon">
+                                    <i class="fas fa-file-alt text-primary"></i>
+                                </h2>
+                            </div>
+                            <h5 class="fw-bold">Apply</h5>
+                            <p class="small mb-3">Choose your mentorship track and submit your application.</p>
+                            <p class="small text-muted"><i class="fas fa-clock me-1 text-primary"></i> Few Minutes</p>
+                        </div>
+                        <div class="step-footer bg-primary text-white fw-bold py-2">
+                            Step 01
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="step-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h2 class="circle-icon border-tertiary">
+                                    <i class="fas fa-laptop-code text-tertiary"></i>
+                                </h2>
+                            </div>
+                            <h5 class="fw-bold"> Build</h5>
+                            <p class="small mb-3">Work on real-world projects and gain practical experience.</p>
+                            <p class="small text-muted"><i class="fas fa-project-diagram me-1 text-warning"></i>
+                                Multiple Projects</p>
+                        </div>
+                        <div class="step-footer bg-tertiary text-white fw-bold py-2">
+                            Step 02
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="step-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h2 class="circle-icon border-secondary">
+                                    <i class="fas fa-chalkboard-teacher text-secondary"></i>
+                                </h2>
+                            </div>
+                            <h5 class="fw-bold">Showcase</h5>
+                            <p class="small mb-3">Present your projects and skills to peers and recruiters.</p>
+                            <p class="small text-muted"><i class="fas fa-users me-1 text-secondary"></i> Portfolio Ready
+                            </p>
+                        </div>
+                        <div class="step-footer bg-secondary text-white fw-bold py-2">
+                            Step 03
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FAQs Section -->
+
+    <div class="container py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2 class="fw-bold">Frequently Asked Questions</h2>
+            <p class="text-muted text-muted">Everything you need to know about the program</p>
+        </div>
+
+        <div class="accordion faq-accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item mb-3 rounded-3 border  wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        Who is this mentorship program for?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        This program is designed for beginners to intermediate learners who want to become
+                        full stack developers with hands-on guidance.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item mb-3 rounded-3 border  wow fadeInUp" data-wow-delay="0.2s">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Do I need prior coding experience?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No prior experience is required. The program starts with the fundamentals and gradually builds
+                        to advanced topics.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item mb-3 rounded-3 border  wow fadeInUp" data-wow-delay="0.3s">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Will I work on real projects?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes! You’ll build real-world projects, including a final capstone project that you can showcase
+                        in your portfolio.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item mb-3 rounded-3 border  wow fadeInUp" data-wow-delay="0.4s">
+                <h2 class="accordion-header" id="faq4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Do I get a certificate after completion?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, you will receive a recognized completion certificate to highlight your full stack
+                        development skills.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="container-fluid bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 wow fadeInUp" data-wow-delay="0.1s">Ready to Become a Full Stack Developer?</h2>
+            <a href="https://wa.link/50r2d2" target="_blank" class="btn btn-light btn-lg wow fadeInUp"
+                data-wow-delay="0.3s">Enroll Now</a>
+        </div>
+    </div>
+
+    <!-- Footer (reuse same as mentorship.html) -->
+    <div class="container-fluid bg-dark text-light footer mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Contact / Address -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                    <h2 class="text-primary mb-4">
+                        <img src="img/skill-fresh copy.svg" alt="SkillFresh" style="height:40px;">
+                    </h2>
+                    <p class="mb-3 d-flex align-items-start">
+                        <i class="fa fa-map-marker-alt me-3 mt-1"></i>
+                        <span>
+                            #39B, 2nd Floor, Kongunadu Trust,<br>
+                            1st Street, Chakrapani Colony,<br>
+                            North Parade Road, St. Thomas Mount,<br>
+                            Chennai, Tamil Nadu – 600016
+                        </span>
+                    </p>
+                    <p class="mb-2  d-flex align-items-center">
+
+                        <a href="tel:+919944553287" class="text-light link-footer "><i
+                                class="fa fa-phone-alt me-3"></i>+91 99445 53287</a>
+                    </p>
+                    <p class="mb-2  d-flex align-items-center">
+
+                        <a href="mailto:hello@skillfresh.in" class="text-light link-footer "> <i
+                                class="fa fa-envelope me-3"></i> hello@skillfresh.in</a>
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="campus-ready.html">Campus Ready</a>
+                    <a class="btn btn-link" href="mentorship.html">Mentorship Program</a>
+                    <a class="btn btn-link" href="#contact">Contact</a>
+                </div>
+
+                <!-- Subscribe & Social -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Stay Updated</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control p-3 border-0" placeholder="Your Email Address">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-2" href="https://www.instagram.com/skillfresh_now"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2"
+                            href="https://www.linkedin.com/company/skillfresh/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2" href="https://wa.link/50r2d2"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left side: Copyright -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">SkillFresh,</a> All Rights Reserved.
+                </div>
+
+                <!-- Right side: Links -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Terms & Conditions</a>
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script><!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    <!-- <script>
+        document.querySelectorAll(".curriculum-list-card").forEach(card => {
+            card.addEventListener("click", function () {
+                // Remove active from all cards
+                document.querySelectorAll(".curriculum-list-card").forEach(c => c.classList.remove(
+                    "active"));
+
+                // Add active to clicked card
+                this.classList.add("active");
+
+                // Update left detail panel
+                document.getElementById("detail-title").textContent = this.dataset.title;
+                document.getElementById("detail-desc").textContent = this.dataset.desc;
+                document.getElementById("detail-duration").textContent = this.dataset.duration;
+                document.getElementById("detail-img").src = this.dataset.img;
+            });
+        });
+    </script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.curriculum-list-card');
+            const modules = document.querySelectorAll('.curriculum-detail');
+
+            function onScroll() {
+                // Track which module is closest to top but not too far above viewport
+                let closestIndex = 0;
+                let closestDistance = Number.NEGATIVE_INFINITY;
+                const threshold = window.innerHeight / 3; // 1/3 viewport height
+
+                modules.forEach((module, index) => {
+                    const rect = module.getBoundingClientRect();
+                    const distance = rect.top;
+
+                    // Accept candidates that are above top but not beyond negative threshold
+                    if (distance <= threshold && distance > closestDistance) {
+                        closestDistance = distance;
+                        closestIndex = index;
+                    }
+                });
+
+                cards.forEach(card => card.classList.remove('active'));
+                if (cards[closestIndex]) {
+                    cards[closestIndex].classList.add('active');
+                }
+            }
+
+            window.addEventListener('scroll', onScroll);
+
+            // Initialize active on page load
+            onScroll();
+        });
+    </script>
+
+</body>
+
+</html>

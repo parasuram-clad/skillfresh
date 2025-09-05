@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Full Stack Developer Mentorship Program - SkillFresh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .curriculum-list-card {
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        /* full box border */
+        border-radius: 12px;
+        /* rounded corners */
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        /* subtle shadow */
+        transition: all 0.3s ease;
+    }
+
+    .curriculum-list-card:hover {
+        transform: translateY(-3px);
+        /* small lift effect */
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        border-color: var(--primary);
+        /* highlight border on hover */
+    }
+
+    .curriculum-list-card.active {
+        border: 2px solid var(--primary);
+        background: #f9fff0;
+        /* light tint of primary */
+        box-shadow: 0 6px 20px rgba(188, 223, 71, 0.3);
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .curriculum-section {
+        height: 80%;
+        /* Full viewport height */
+        display: flex;
+        align-items: self-start;
+        /* Center content vertically */
+    }
+
+    #curriculum-detail {
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+        /* subtle border */
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        /* ensures image spans edge-to-edge */
+        padding: 0;
+        /* remove inner padding */
+    }
+
+    #curriculum-detail img {
+        width: 100%;
+        height: 300px;
+        /* fixed height for consistency */
+        object-fit: cover;
+        /* crop nicely to fill area */
+        display: block;
+        border-bottom: 1px solid #e0e0e0;
+        /* clean separation line */
+        border-radius: 12px 12px 0 0;
+        /* rounded top corners */
+    }
+
+    #curriculum-detail .detail-body {
+        padding: 20px;
+        /* move content padding here */
+        flex: 1;
+    }
+
+    .curriculum-list-card {
+        min-height: 100px;
+        /* Consistent card height */
+    }
+
+
+
+    .curriculum-card {
+        border-radius: 16px;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .curriculum-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .curriculum-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .bg-tertiary {
+        background: var(--tertiary) !important;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeInDown" data-wow-delay="0.2s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0"><img src="img/skill-fresh.svg" alt="SkillFresh"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4 border-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="campus-ready.html" class="nav-item nav-link">Campus Ready</a>
+                <a href="mentorship.html" class="nav-item nav-link active">Mentorship Program</a>
+            </div>
+            <a href="https://wa.link/50r2d2" target="_blank"
+                class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us <i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid bg-light text-white text-center py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <h1 class="display-4 fw-bold">Full Stack Developer </h1>
+        <p class="lead text-secondary">Master both Frontend and Backend with real-world projects</p>
+    </div>
+
+    <!-- Program Overview -->
+    <div class="container py-5">
+        <div class="row g-5 align-items">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <img src="img/Mentorship-Program/fsw.jpg" class="img-fluid rounded-4 shadow-sm h-100 w-100"
+                    alt="Full Stack Developer">
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                <h2 class="fw-bold mb-3">Program Overview</h2>
+                <p>Our 16-week mentorship program is designed for aspiring full stack developers who want to build
+                    scalable applications. With hands-on projects and direct mentorship from industry experts, you’ll
+                    gain skills that employers value the most.</p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Learn HTML, CSS, JavaScript,
+                        React</li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Master Node.js, Express &
+                        MongoDB</li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Build and deploy full-stack
+                        applications</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Curriculum Section -->
+    <div class="container py-5 ">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2 class="fw-bold ">Curriculum</h2>
+            <p class="text-muted text-secondary">Step-by-step learning journey</p>
+        </div>
+
+        <div class="row g-4 curriculum-section">
+            <!-- Left Detail Panel -->
+            <div class="col-lg-7">
+                <div id="curriculum-detail" class=" rounded-4 shadow-sm bg-white h-100">
+                    <img src="img/Mentorship-Program/fsd/pic1.jpg" class="img-fluid rounded-4 mb-3 " id="detail-img"
+                        alt="Curriculum Image">
+                    <div class="detail-body">
+
+                        <h3 id="detail-title" class="fw-bold">Weeks 1–4: Frontend Basics</h3>
+                        <div class="d-flex mb-3 text-muted small">
+                            <span class="me-3"><i class="fa fa-clock me-1 text-primary"></i><span id="detail-duration">4
+                                    Weeks</span></span>
+                            <span><i class="fa fa-graduation-cap me-1 text-primary"></i> Beginner Level</span>
+                        </div>
+                        <p id="detail-desc">
+                            Learn the foundations of HTML, CSS, and JavaScript. Build simple responsive websites and
+                            understand web fundamentals.
+                        </p>
+                        <button class="btn btn-primary rounded-pill">Enroll Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right List of Steps -->
+            <div class="col-lg-5">
+                <div class="d-flex flex-column gap-3">
+                    <!-- Card 1 -->
+                    <div class=" active curriculum-list-card p-3 rounded-4 shadow-sm d-flex align-items-center"
+                        data-title="Weeks 1–4: Frontend Basics"
+                        data-desc="Learn the foundations of HTML, CSS, and JavaScript. Build simple responsive websites and understand web fundamentals."
+                        data-duration="4 Weeks" data-img="img/Mentorship-Program/fsd/pic1.jpg">
+                        <div class="icon-box bg-primary text-white me-3"><i class="fa fa-code"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Frontend Basics</h6>
+                            <small class="text-muted">Weeks 1–4</small>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="curriculum-list-card p-3 rounded-4 shadow-sm d-flex align-items-center"
+                        data-title="Weeks 5–8: React.js & APIs"
+                        data-desc="Dive into React.js, modern component-driven development, and learn to integrate APIs for dynamic apps."
+                        data-duration="4 Weeks" data-img="img/Mentorship-Program/fsd/pic2.jpg">
+                        <div class="icon-box bg-secondary text-white me-3"><i class="fa fa-laptop-code"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">React.js & APIs</h6>
+                            <small class="text-muted">Weeks 5–8</small>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="curriculum-list-card p-3 rounded-4 shadow-sm d-flex align-items-center"
+                        data-title="Weeks 9–12: Backend Development"
+                        data-desc="Master Node.js, Express, and MongoDB to build secure REST APIs and backend services."
+                        data-duration="4 Weeks" data-img="img/Mentorship-Program/fsd/pic3.jpg">
+                        <div class="icon-box bg-tertiary text-white me-3"><i class="fa fa-server"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Backend Development</h6>
+                            <small class="text-muted">Weeks 9–12</small>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="curriculum-list-card p-3 rounded-4 shadow-sm d-flex align-items-center"
+                        data-title="Weeks 13–16: Capstone Project"
+                        data-desc="Work on a full-stack capstone project and deploy it to the cloud, showcasing your skills."
+                        data-duration="4 Weeks" data-img="img/Mentorship-Program/fsd/pic4.jpg">
+                        <div class="icon-box bg-dark text-white me-3"><i class="fa fa-rocket"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Capstone Project</h6>
+                            <small class="text-muted">Weeks 13–16</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Benefits Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2 class="fw-bold">Program Benefits</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="p-4 bg-light rounded-4 shadow-sm h-100">
+                    <i class="fa fa-user-tie fa-2x text-primary mb-3"></i>
+                    <h5>1-on-1 Mentorship</h5>
+                    <p class="text-muted">Get direct feedback and guidance from industry professionals.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="p-4 bg-light rounded-4 shadow-sm h-100">
+                    <i class="fa fa-briefcase fa-2x text-primary mb-3"></i>
+                    <h5>Hands-on Projects</h5>
+                    <p class="text-muted">Work on real-world assignments to build a strong portfolio.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="p-4 bg-light rounded-4 shadow-sm h-100">
+                    <i class="fa fa-graduation-cap fa-2x text-primary mb-3"></i>
+                    <h5>Career Support</h5>
+                    <p class="text-muted">Get help with portfolio building, resume prep, and mock interviews.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="container-fluid bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 wow fadeInUp" data-wow-delay="0.1s">Ready to Become a Full Stack Developer?</h2>
+            <a href="https://wa.link/50r2d2" target="_blank" class="btn btn-light btn-lg wow fadeInUp"
+                data-wow-delay="0.3s">Enroll Now</a>
+        </div>
+    </div>
+
+    <!-- Footer (reuse same as mentorship.html) -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                    <h2 class="text-primary mb-4"><img src="img/skill-fresh copy.svg" alt="SkillFresh"
+                            style="height:40px;"></h2>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>#39B, 2nd Floor, Kongunadu Trust, 1st
+                        Street,
+                        Chakrapani Colony, North Parade Road,
+                        St. Thomas Mount, Chennai, Tamil Nadu 600 016</p>
+                    <p class="mb-2 link-footer">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        <a href="tel:+919944553287" class="text-light text-decoration-none">+91 99445 53287</a>
+                    </p>
+
+                    <p class="mb-2 link-footer">
+                        <i class="fa fa-envelope me-3"></i>
+                        <a href="mailto:hello@skillfresh.in"
+                            class="text-light text-decoration-none">hello@skillfresh.in</a>
+                    </p>
+
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="campus-ready.html">Campus Ready</a>
+                    <a class="btn btn-link" href="mentorship.html">Mentorship Program</a>
+
+                    <a class="btn btn-link" href="#contact">Contact</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Stay Updated</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-2" href="https://www.instagram.com/skillfresh_now"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2"
+                            href="https://www.linkedin.com/company/skillfresh/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2" href="https://wa.link/50r2d2"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left side: Copyright -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">SkillFresh,</a> All Rights Reserved.
+                </div>
+
+                <!-- Right side: Links -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Terms & Conditions</a>
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        document.querySelectorAll(".curriculum-list-card").forEach(card => {
+            card.addEventListener("click", function () {
+                // Remove active from all cards
+                document.querySelectorAll(".curriculum-list-card").forEach(c => c.classList.remove(
+                    "active"));
+
+                // Add active to clicked card
+                this.classList.add("active");
+
+                // Update left detail panel
+                document.getElementById("detail-title").textContent = this.dataset.title;
+                document.getElementById("detail-desc").textContent = this.dataset.desc;
+                document.getElementById("detail-duration").textContent = this.dataset.duration;
+                document.getElementById("detail-img").src = this.dataset.img;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

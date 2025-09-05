@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SkillFresh - Educate. Evaluate. Empower.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MJW2NCFMY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3MJW2NCFMY');
+    </script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-dark text-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0"><img src="img/skill-fresh.svg" alt=""></h2>
+        </a>
+        <button type="button" class="navbar-toggler collapsed me-4 border-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+
+                <a href="about.html" class="nav-item nav-link ">About Us</a>
+                <a href="campus-ready.html" class="nav-item nav-link ">Campus Ready</a>
+                <a href="mentorship.html" class="nav-item nav-link ">Mentorship Program</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <!-- <a href="#why-skill-fresh" class="nav-item nav-link">Why Us?</a> -->
+                <!-- <a href="#recruiters" class="nav-item nav-link">Recruiters</a> -->
+                <!-- <a href="contact.html" class="nav-item nav-link">The Team</a> -->
+                <!-- <a href="contact.html" class="nav-item nav-link">Testimonial</a> -->
+                <!-- <a href="https://wa.link/uoaaqq" target="_blank" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a href="https://wa.link/50r2d2" target="_blank"
+                class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <style>
+        .underlined {
+            position: relative;
+            z-index: 1;
+        }
+
+        .underlined::after {
+            content: '';
+            position: absolute;
+            bottom: -0.3rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            height: 0.75rem;
+            z-index: -1;
+            background-image: url('img/underline.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top right;
+        }
+    </style>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s" style="background-color: rgb(232, 255, 224);">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <h5><span class="underlined">A 100-Day Challenge</span></h5>
+                                    <h2 class="display-2 mb-5 animated slideInDown"><span
+                                            class="highlight-top">Learn.</span> Practice. Secure.</h2>
+                                    <!-- <a href="https://wa.link/50r2d2" target="_blank" -->
+                                    <!-- class="btn btn-secondary py-sm-3 px-sm-5">Contact Us</a> -->
+                                    <!-- <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0" style="margin-top: -80px;">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-primary-light shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square bg-primary">
+                                <i class="fa fa-car text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h1>100+</h1>
+                                <span>Industry Mentors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-secondary-light shadow d-flex align-items-center h-100 p-4"
+                        style="min-height: 150px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square bg-secondary">
+                                <i class="fa fa-users text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h1>50+</h1>
+                                <span>Topics Covered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-tertiary-light shadow d-flex align-items-center h-100 p-4"
+                        style="min-height: 150px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square bg-tertiary">
+                                <i class="fa fa-file-alt text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h1>25+</h1>
+                                <span>Recruiters Onboarded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square bg-primary">
+                                <i class="fa fa-file-alt text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h1>10+</h1>
+                                <span>Colleges Partnered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-3" id="about-us">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/skill-fresh-student-1.png" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h6 class="text-primary text-uppercase mb-2">About Us</h6>
+                        <h1 class="display-6 mb-4">We Help Freshers Meet Industrial Expectations.</h1>
+                        <p>A professional team who are committed to empowering graduates with industry-relevant skills,
+                            bridging the gap between academic learning and corporate expectations.</p>
+                        <p class="mb-4">By collaborating with industry professionals and recruiters, we create a
+                            seamless hiring ecosystem where companies can access pre-screened, job-ready talent.</p>
+                        <p class="mb-4">Our mission is to make quality skill development accessible, affordable, and
+                            impactful, helping students build strong careers while enabling companies to find top-tier
+                            talent efficiently.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <a class="d-inline-flex align-items-center btn btn-outline-secondary border-2 p-2"
+                                    href="tel:+919944553287">
+                                    <span class="flex-shrink-0 btn-square bg-secondary">
+                                        <i class="fa fa-phone-alt text-white"></i>
+                                    </span>
+                                    <span class="px-3">99 44 55 32 87</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Courses Start -->
+    <div class="courses my-4 py-6" id="how-it-works">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">The Process</h6>
+                <h1 class="display-6 mb-4">How it works</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100 justify-content-between">
+                        <div class="text-center p-4">
+                            <div class="d-flex justify-content-center">
+                                <h2 class="circle-icon">
+                                    <i class="fa fa-person-chalkboard text-primary"></i>
+                                </h2>
+                            </div>
+                            <h5 class="mb-3">Career Workshop</h5>
+                            <p>An offline program to guide students in Placement Preparation by industry experts.</p>
+
+                        </div>
+                        <div>
+                            <ol class="breadcrumb justify-content-center mb-0 pb-4">
+                                <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>2
+                                    Days</li>
+                            </ol>
+                            <div class="text-center bg-primary text-white fs-5 py-1 px-4">Step 01</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100 justify-content-between">
+                        <div class="text-center p-4">
+                            <div class="d-flex justify-content-center">
+                                <h2 class="circle-icon border-tertiary">
+                                    <i class="fa fa-pen-to-square text-tertiary"></i>
+                                </h2>
+                            </div>
+                            <h5 class="mb-3">Skill Evaluation</h5>
+                            <p>A daily skill assessment with predefined topics and a real-time leaderboard.</p>
+                        </div>
+                        <div>
+                            <ol class="breadcrumb justify-content-center mb-0 pb-4">
+                                <li class="breadcrumb-item small"><i
+                                        class="fa fa-calendar-alt text-tertiary me-2"></i>105 Days</li>
+                            </ol>
+                            <div class="text-center bg-tertiary text-white fs-5 py-1 px-4">Step 02</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100 justify-content-between">
+                        <div class="text-center p-4">
+                            <div class="d-flex justify-content-center">
+                                <h2 class="circle-icon border-secondary">
+                                    <i class="fa fa-handshake text-secondary"></i>
+                                </h2>
+                            </div>
+                            <h5 class="mb-3">Corporate Connect</h5>
+                            <p>Companies conduct interviews and offer internships and jobs to the right candidates.</p>
+
+                        </div>
+                        <div>
+                            <ol class="breadcrumb justify-content-center mb-0 pb-4">
+                                <li class="breadcrumb-item small"><i
+                                        class="fa fa-calendar-alt text-secondary me-2"></i>1
+                                    Year</li>
+                            </ol>
+                            <div class="text-center bg-secondary text-white fs-5 py-1 px-4">Step 03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-3 mb-3" id="why-skill-fresh">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-primary text-uppercase mb-2">Our Specialities</h6>
+                    <h1 class="display-6 mb-4">Why SkillFresh for you?</h1>
+                    <p class="mb-5">This program helps students bridge the gap between academic and industry needs.
+                        With expert guidance, daily assessments, and direct corporate access, it ensures job readiness
+                        and career success.
+                    </p>
+                    <div class="row gy-5 gx-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0 btn-square bg-secondary me-3">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Career Clarity</h5>
+                                    <p>Understand company expectations & skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0 btn-square bg-secondary me-3">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Skill Development</h5>
+                                    <p>Improve problem-solving & technical abilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0 btn-square bg-secondary me-3">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Daily Practice</h5>
+                                    <p>100 days of assessments for consistency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0 btn-square bg-secondary me-3">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Job Readiness</h5>
+                                    <p>Gain real-world insights & preparation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0 btn-square bg-secondary me-3">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Corporate Access</h5>
+                                    <p>Connect with top recruiters for jobs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="flex-shrink-0 btn-square bg-secondary me-3">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Affordable Price</h5>
+                                    <p>Get high-value training at a low cost.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative overflow-hidden pe-5 pt-2 h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/skill-fresh-expert-1.png" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Recruiters Start -->
+    <!--
+    <div class="recrutiers py-6" id="recruiters">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">The Recruiters</h6>
+                <h1 class="display-6 mb-4" style="color: white !important;">Who Hires You?</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="row justify-content-center pd-btm-0">
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-agilisys.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-appviewx.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-contus.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-datayaan.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-delium.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2 highlight-4">
+                        <img src="https://fabevy.com/assets/images/client-doodleblue.png" alt="" class="img-fluid">
+                    </div>
+
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2 highlight-2">
+                        <img src="https://fabevy.com/assets/images/client-hogarth.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-mobo.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-payoda.png" alt="" class="img-fluid">
+                    </div>
+
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-vertace.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="recruiter col-6 col-md-4 col-lg-2">
+                        <img src="https://fabevy.com/assets/images/client-williamslea.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- Recruiters End -->
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">Meet The Team</h6>
+                <h1 class="display-6 mb-4">We Have Great Experience Of Driving</h1>
+            </div>
+            <div class="row g-0 team-items">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Full Name</h5>
+                            <span>Trainer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Full Name</h5>
+                            <span>Trainer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Full Name</h5>
+                            <span>Trainer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Full Name</h5>
+                            <span>Trainer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+    <div class="appointment" id="contact">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-primary text-center p-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 offset-lg-3">
+                            <h1 class="mb-4">Let's Connect</h1>
+                            <form class="gform" method="POST" data-email="hello@skillfresh.in"
+                                action="https://script.google.com/macros/s/AKfycbyiJm6nox4Fygi7myo5Iek8SNyDdJUG5GZDAasdFzuCEc5bo_kNykBratj6k9b8Ie3T/exec">
+                                <div style="display:none" class="thankyou_message">
+                                    <!-- You can customize the thankyou message by editing the code below -->
+                                    <h5><em>Thanks</em> for contacting us! We will get back to you soon!
+                                    </h5>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="gname"
+                                                placeholder="Your Name" name="name">
+                                            <label for="gname">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <select class="form-control border-0" name="usertype" id="user-type"
+                                                required style="padding-top: 0.625rem;">
+                                                <option>Your Profession</option>
+                                                <option value="Student">Student</option>
+                                                <option value="Graduate">Graduate</option>
+                                                <option value="Recruiter">Recruiter</option>
+                                                <option value="Recruiter">Academician</option>
+                                                <option value="Others">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control border-0" id="gmail"
+                                                placeholder="Your Email" name="email">
+                                            <label for="gmail">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="cname"
+                                                placeholder="Mobile Number" name="number" required>
+                                            <label for="cname">Mobile Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control border-0" name="message"
+                                                placeholder="Leave a message here" id="message"
+                                                style="height: 100px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-dark w-100 py-3" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Start 
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">Testimonial</h6>
+                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-3.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     Testimonial End -->
+
+    <!-- Footer Start 
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                    <h2 class="text-primary mb-4"><i class="fa fa-car text-white me-2"></i>Drivin</h2>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Popular Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     Footer End -->
+
+
+
+    <div class="container-fluid bg-dark text-light footer mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Contact / Address -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                    <h2 class="text-primary mb-4">
+                        <img src="img/skill-fresh copy.svg" alt="SkillFresh" style="height:40px;">
+                    </h2>
+                    <p class="mb-3 d-flex align-items-start">
+                        <i class="fa fa-map-marker-alt me-3 mt-1"></i>
+                        <span>
+                            #39B, 2nd Floor, Kongunadu Trust,<br>
+                            1st Street, Chakrapani Colony,<br>
+                            North Parade Road, St. Thomas Mount,<br>
+                            Chennai, Tamil Nadu – 600016
+                        </span>
+                    </p>
+                    <p class="mb-2  d-flex align-items-center">
+
+                        <a href="tel:+919944553287" class="text-light link-footer "><i
+                                class="fa fa-phone-alt me-3"></i>+91 99445 53287</a>
+                    </p>
+                    <p class="mb-2  d-flex align-items-center">
+
+                        <a href="mailto:hello@skillfresh.in" class="text-light link-footer "> <i
+                                class="fa fa-envelope me-3"></i> hello@skillfresh.in</a>
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="campus-ready.html">Campus Ready</a>
+                    <a class="btn btn-link" href="mentorship.html">Mentorship Program</a>
+                    <a class="btn btn-link" href="#contact">Contact</a>
+                </div>
+
+                <!-- Subscribe & Social -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Stay Updated</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control p-3 border-0" placeholder="Your Email Address">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-2" href="https://www.instagram.com/skillfresh_now"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2"
+                            href="https://www.linkedin.com/company/skillfresh/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2" href="https://wa.link/50r2d2"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left side: Copyright -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">SkillFresh,</a> All Rights Reserved.
+                </div>
+
+                <!-- Right side: Links -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Terms & Conditions</a>
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Campus Ready - SkillFresh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap & Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<!-- <style>
+    .container-fluid {
+        margin-top: 200px !important;
+    }
+
+
+    .small {
+        letter-spacing: 0.5px !important;
+    }
+
+    .card {
+        box-shadow: 0px 5px 16px rgba(223, 241, 223, 0.5);
+        transition: 0.8s;
+        background: #ffffff;
+        ;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 7px !important;
+
+    }
+
+    .card-header,
+    .card-footer {
+        border-radius: 7px !important;
+    }
+
+    .card:after {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 100%;
+        z-index: 9999;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .card-title img {
+        z-index: 99999 !important;
+    }
+
+    .card .layer {
+        position: absolute;
+        top: calc(100% - 5px);
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#bcdf47, #ef9921);
+        left: 0;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        box-shadow: -5px 50px 100px rgba(223, 241, 223, 0.5);
+    }
+
+
+    .card:hover hr {
+        background-color: #fff;
+
+    }
+
+    .card:hover h4 {
+        font-weight: 600;
+    }
+
+    .card:hover p {
+        font-weight: 600;
+    }
+
+    .card:hover small {
+        font-weight: 600;
+    }
+
+    .card:hover .layer {
+        top: 0;
+    }
+
+    .card .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .card .content .img-1 {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white !important;
+
+    }
+
+    .card h4 {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    hr {
+        background-color: rgb(117, 117, 117);
+        width: 80% !important;
+        transition: 1s;
+    }
+
+
+    .bold {
+        font-weight: 500;
+    }
+
+    #quotes {
+        opacity: 0.1;
+        filter: alpha(opacity=40);
+    }
+
+
+    @media (max-width: 479px) {
+        p {
+            padding: 0 !important;
+        }
+
+        .img-1 {
+            margin-right: 0 !important;
+        }
+
+    }
+</style> -->
+<style>
+    :root {
+        --primary: #bcdf47;
+        --secondary: #18d0fe;
+        --tertiary: #ef9921;
+    }
+
+    /* Testimonial Card */
+    .testimonial-card {
+        background: #fff;
+        border-radius: 12px;
+        border-top: 5px solid var(--primary);
+        /* border-left: 3px solid var(--primary);
+        border-right: 3px solid var(--primary); */
+        border-bottom: 1px solid #bcbcbc;
+        /* keep bottom lighter */
+        padding: 20px;
+        text-align: left;
+        height: 100%;
+        transition: all 0.3s ease;
+        /* smooth animation */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonial-card:hover {
+        /* transform: translateY(-8px); */
+        /* lift up */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        /* deeper shadow */
+        border-bottom: 5px solid var(--primary);
+        /* highlight bottom too */
+    }
+
+    /* Header with Profile */
+    .testimonial-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .profile-initial {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--secondary);
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        border: 3px solid var(--primary);
+        text-transform: uppercase;
+    }
+
+    .testimonial-info h4 {
+        margin: 0;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--secondary);
+    }
+
+    .testimonial-info small {
+        color: var(--tertiary);
+        font-size: 13px;
+    }
+
+    /* Stars */
+    .stars {
+        margin: 8px 0 12px;
+    }
+
+    .stars i {
+        color: var(--tertiary);
+        font-size: 16px;
+        margin-right: 3px;
+    }
+
+    /* Testimonial Text */
+    .testimonial-text {
+        font-size: 15px;
+        color: #555;
+        font-style: italic;
+        line-height: 1.6;
+    }
+
+    .swiper {
+        padding-bottom: 40px;
+
+        /* give space for dots below */
+    }
+
+    .swiper-pagination {
+        position: relative !important;
+
+
+        /* move out of absolute */
+        bottom: 0 !important;
+        margin-top: 20px;
+        /* spacing from cards */
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--primary);
+    }
+</style>
+
+<style>
+    /* Decorative quote icon */
+    .quote-icon {
+        font-size: 32px;
+        color: #0d6efd;
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        opacity: 0.2;
+    }
+
+    .journey-zigzag {
+        position: relative;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .journey-zigzag::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #0d6efd;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        z-index: -2;
+
+    }
+
+    .zigzag-item {
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+    }
+
+    .zigzag-item .zigzag-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        position: absolute;
+        top: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .zigzag-item.left {
+        left: 0;
+    }
+
+    .zigzag-item.left .zigzag-icon {
+        right: -30px;
+    }
+
+    .zigzag-item.right {
+        left: 50%;
+    }
+
+    .zigzag-item.right .zigzag-icon {
+        left: -30px;
+
+    }
+
+    .zigzag-content {
+        border-radius: 12px;
+        background: #fff;
+        position: relative;
+    }
+
+    .zigzag-item.left .zigzag-content {
+        margin-right: 30px;
+    }
+
+    .zigzag-item.right .zigzag-content {
+        margin-left: 30px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+        .journey-zigzag::after {
+            left: 30px;
+        }
+
+        .zigzag-item {
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 25px;
+        }
+
+        .zigzag-item.right {
+            left: 0;
+        }
+
+        .zigzag-item.right .zigzag-icon {
+            left: 0;
+        }
+
+        .zigzag-item .zigzag-icon {
+            left: 0;
+            right: auto;
+        }
+
+        .zigzag-content {
+            margin: 0 0 20px 60px !important;
+        }
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0"><img src="img/skill-fresh.svg" alt=""></h2>
+        </a>
+        <button type="button" class="navbar-toggler collapsed me-4 border-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+
+                <a href="about.html" class="nav-item nav-link ">About Us</a>
+                <a href="campus-ready.html" class="nav-item nav-link active">Campus Ready</a>
+                <a href="mentorship.html" class="nav-item nav-link ">Mentorship Program</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <!-- <a href="#why-skill-fresh" class="nav-item nav-link">Why Us?</a> -->
+                <!-- <a href="#recruiters" class="nav-item nav-link">Recruiters</a> -->
+                <!-- <a href="contact.html" class="nav-item nav-link">The Team</a> -->
+                <!-- <a href="contact.html" class="nav-item nav-link">Testimonial</a> -->
+                <!-- <a href="https://wa.link/uoaaqq" target="_blank" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a href="https://wa.link/50r2d2" target="_blank"
+                class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid text-white py-5 mb-5 bg-light">
+        <div class=" container text-center wow fadeInDown" data-wow-delay="0.2s">
+            <h1 class="display-3 fw-bold">Campus Ready Program</h1>
+            <p class="lead text-secondary">Educate. Evaluate. Empower.</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <img src="img/campus.jpg" class="img-fluid rounded shadow" alt="Campus Training">
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                <h2 class="mb-4">What is Campus Ready?</h2>
+                <p>Campus Ready is a 100-Day Challenge designed to transform students into industry-ready professionals.
+                    Through workshops, skill evaluations, and corporate connections, we empower students to excel in
+                    placements and beyond.</p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> 2-day industry-led workshop
+                    </li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Daily skill assessments for
+                        100 days</li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Real-time leaderboard &
+                        feedback</li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-primary  me-2"></i> Direct recruiter connections
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Steps Section -->
+    <!-- Steps Section -->
+    <!-- Journey Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary text-uppercase">The Journey</h6>
+            <h2 class="fw-bold">How Campus Ready Works</h2>
+        </div>
+
+        <div class="journey-zigzag">
+
+            <!-- Step 01 -->
+            <div class="zigzag-item left wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="zigzag-icon text-white circle-icon bg-white">
+                    <i class="fa fa-chalkboard-teacher text-primary"></i>
+                </div>
+                <div class="zigzag-content shadow-lg bg-white rounded pb-4">
+                    <div class="text-center bg-primary text-white fs-5 py-1 px-4">Step 01</div>
+
+                    <h5 class="px-4 pt-4">Career Workshop</h5>
+                    <ol class=" breadcrumb justify-content-start mb-0 pb-1 px-4">
+                        <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>2
+                            Days</li>
+                    </ol>
+                    <!-- <p class="text-muted">Step 01 • 2 Days</p> -->
+                    <p class="px-4">An offline program to guide students in Placement Preparation by industry experts.
+                    </p>
+                    <!-- <div>
+                        <ol class=" breadcrumb justify-content-center mb-0 pb-4">
+                            <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>2
+                                Days</li>
+                        </ol>
+                        <div class="text-center bg-primary text-white fs-5 py-1 px-4">Step 01</div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="zigzag-item right wow fadeInRight" data-wow-delay="0.4s">
+                <div class="zigzag-icon border-tertiary text-white text-tertiary circle-icon bg-white">
+                    <i class="fa fa-pen-to-square text-tertiary"></i>
+                </div>
+                <div class="zigzag-content shadow-lg bg-white pb-4  rounded">
+                    <div class="text-center bg-tertiary text-white fs-5 py-1 px-4">Step 02</div>
+
+                    <h5 class="px-4 pt-4">Skill Evaluation</h5>
+                    <ol class="breadcrumb justify-content-start mb-0 pb-1 px-4">
+                        <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-tertiary me-2"></i>105
+                            Days</li>
+                    </ol>
+                    <!-- <p class="text-muted">Step 02 • 105 Days</p> -->
+                    <p class="px-4">A daily skill assessment with predefined topics and a real-time leaderboard.</p>
+                    <div>
+
+                        <!-- <div class="text-center bg-tertiary text-white fs-5 py-1 px-4">Step 02</div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="zigzag-item left wow fadeInLeft" data-wow-delay="0.6s">
+                <div class="zigzag-icon border-secondary text-white text-secondary circle-icon bg-white">
+                    <i class="fa fa-handshake"></i>
+                </div>
+                <div class="zigzag-content shadow-lg bg-white pb-4  rounded">
+                    <div class="text-center bg-secondary text-white fs-5 py-1 px-4">Step 03</div>
+
+                    <h5 class="px-4 pt-4">Corporate Connect</h5>
+                    <ol class="breadcrumb justify-content-start mb-0 pb-1 px-4">
+                        <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-secondary me-2"></i>1
+                            Year</li>
+                    </ol>
+                    <!-- <p class="text-muted">Step 03 • 1 Year</p> -->
+                    <p class="px-4">Companies conduct interviews and offer internships and jobs to the right candidates.
+                    </p>
+                    <div>
+
+                        <!-- <div class="text-center bg-secondary text-white fs-5 py-1 px-4">Step 03</div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Bootstrap Testimonial Section -->
+    <div class="container py-5">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+            <h6 class="text-primary text-uppercase fs-6">Success Stories</h6>
+            <h2 class="fw-bold fs-2">What Students Say</h2>
+        </div>
+
+        <!-- Bootstrap Carousel -->
+        <div class="container my-5">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <!-- Slide 1 -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="profile-initial">A</div>
+                                <div class="testimonial-info">
+                                    <h4>Aarav Patel</h4>
+                                    <small>Tech Enthusiast</small>
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p class="testimonial-text">
+                                Impressed with their innovative approach and customer support. They made everything so
+                                simple and efficient.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="profile-initial">M</div>
+                                <div class="testimonial-info">
+                                    <h4>Michael Johnson</h4>
+                                    <small>Startup Founder</small>
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p class="testimonial-text">
+                                The team was fantastic—professional, creative, and quick to respond. They really helped
+                                us launch successfully!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="profile-initial">S</div>
+                                <div class="testimonial-info">
+                                    <h4>Sophia Martinez</h4>
+                                    <small>Marketing Lead</small>
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                            <p class="testimonial-text">
+                                Absolutely outstanding! Their attention to detail and commitment to quality exceeded all
+                                my expectations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="profile-initial">D</div>
+                                <div class="testimonial-info">
+                                    <h4>Daniel Lee</h4>
+                                    <small>Freelance Designer</small>
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p class="testimonial-text">
+                                Great experience working with them! Communication was smooth, and the project was
+                                delivered right on time.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Add more cards as swiper-slide -->
+
+                </div>
+
+                <!-- Swiper Controls -->
+                <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container-fluid bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Kickstart Your Career with Campus Ready</h2>
+            <a href="https://wa.link/50r2d2" target="_blank" class="btn btn-light btn-lg">Join Now</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Contact / Address -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                    <h2 class="text-primary mb-4">
+                        <img src="img/skill-fresh copy.svg" alt="SkillFresh" style="height:40px;">
+                    </h2>
+                    <p class="mb-3 d-flex align-items-start">
+                        <i class="fa fa-map-marker-alt me-3 mt-1"></i>
+                        <span>
+                            #39B, 2nd Floor, Kongunadu Trust,<br>
+                            1st Street, Chakrapani Colony,<br>
+                            North Parade Road, St. Thomas Mount,<br>
+                            Chennai, Tamil Nadu – 600016
+                        </span>
+                    </p>
+                    <p class="mb-2  d-flex align-items-center">
+
+                        <a href="tel:+919944553287" class="text-light link-footer "><i
+                                class="fa fa-phone-alt me-3"></i>+91 99445 53287</a>
+                    </p>
+                    <p class="mb-2  d-flex align-items-center">
+
+                        <a href="mailto:hello@skillfresh.in" class="text-light link-footer "> <i
+                                class="fa fa-envelope me-3"></i> hello@skillfresh.in</a>
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="campus-ready.html">Campus Ready</a>
+                    <a class="btn btn-link" href="mentorship.html">Mentorship Program</a>
+                    <a class="btn btn-link" href="#contact">Contact</a>
+                </div>
+
+                <!-- Subscribe & Social -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Stay Updated</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control p-3 border-0" placeholder="Your Email Address">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-2" href="https://www.instagram.com/skillfresh_now"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2"
+                            href="https://www.linkedin.com/company/skillfresh/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2" href="https://wa.link/50r2d2"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left side: Copyright -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">SkillFresh,</a> All Rights Reserved.
+                </div>
+
+                <!-- Right side: Links -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Terms & Conditions</a>
+                    <a href="#" class=" text-decoration-none mx-2 footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script> <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
