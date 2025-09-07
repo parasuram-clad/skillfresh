@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillFresh Certificate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'skill-fresh-primary': '#bcdf47',
+                        'skill-fresh-secondary': '#18d0fe',
+                        'skill-fresh-tertiary': '#ef9921',
+                        'skill-fresh-light': '#f3f6f8',
+                        'skill-fresh-dark': '#0c2b4b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .geometric-bg {
+            background-color: #0c2b4b;
+            background-image: radial-gradient(circle at 100% 100%, #18d0fe55 0%, transparent 40%),
+                radial-gradient(circle at 0% 0%, #bcdf4755 0%, transparent 40%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen font-sans">
+    <!-- Fixed Certificate Size -->
+    <div class="bg-white shadow-xl rounded-2xl overflow-hidden md:flex" style="width: 600px; height: 400px;">
+
+        <!-- Left Dark Panel -->
+        <div
+            class="geometric-bg p-6 md:p-8 flex-none w-1/3 flex flex-col items-center justify-center text-center relative overflow-hidden">
+
+            <!-- Abstract tech accents -->
+
+
+            <img src="img/skill-fresh 1.svg" alt="" width="100" class="mb-2">
+            <p class="text-skill-fresh-light text-xs md:text-sm tracking-widest uppercase z-10">
+                Ready For Tomorrow
+            </p>
+        </div>
+
+        <!-- Right Light Panel -->
+        <div class="flex-grow p-6 md:p-10 flex flex-col justify-between text-center bg-skill-fresh-light">
+            <!-- Logo at the top -->
+            <!-- Logo at the top -->
+            <div class="mb-4 flex justify-center">
+                <img src="img/skill-fresh.svg" alt="SkillFresh Logo" class="mx-auto" width="150">
+            </div>
+
+            <!-- Main Content -->
+            <div class="flex-grow flex flex-col justify-center items-center px-2">
+                <h3> Certificate of Completion</h3>
+                <p class="text-xs md:text-sm text-gray-600 mb-1">This acknowledges that</p>
+                <h1 class="text-lg md:text-3xl font-extrabold text-skill-fresh-secondary tracking-wide my-2">
+                    John Doe
+                </h1>
+                <p class="text-sm md:text-base text-skill-fresh-dark font-medium leading-relaxed">
+                    has successfully completed the
+                    <span class="font-bold">Full Stack Developer Mentorship Program</span>
+                </p>
+            </div>
+
+            <!-- Signatures and Date -->
+            <div class="mt-4 w-full">
+                <div class="flex flex-row justify-around items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="border-b-2 border-gray-400 w-32 mb-1"></div>
+                        <p class="text-xs text-gray-500">[Signature]</p>
+                        <p class="text-xs text-gray-700 font-medium">Mentor Name</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="border-b-2 border-gray-400 w-32 mb-1"></div>
+                        <p class="text-xs text-gray-500">[Date]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

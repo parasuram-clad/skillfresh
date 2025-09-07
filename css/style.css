@@ -273,6 +273,7 @@
 .navbar.sticky-top {
   top: -100px;
   transition: 0.5s;
+  box-shadow: 2px 2px 3px #3333334f;
 }
 
 .navbar .navbar-brand,
@@ -801,10 +802,11 @@ h4 {
   min-height: 80vh;
   position: relative;
   align-items: flex-start;
+  justify-content: center;
 }
 
 /* Left sidebar sticky */
-.curriculum-section .col-lg-5 {
+.curriculum-section .col-lg-4 {
   position: sticky;
   top: 100px;
   /* offset from top */
@@ -831,7 +833,8 @@ h4 {
   background: white;
   margin-bottom: 30px;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
+  justify-content: center;
 }
 
 .curriculum-detail img {
@@ -939,7 +942,7 @@ small.text-muted {
   display: block; /* ensures the line-height applies properly */
 }
 .con-light-bg {
-  background-color: #ddf1a944;
+  background-color: var(--light);
 }
 .bg-primary-light-1 {
   background-color: #f3ffcb;
